@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+     >
+<RelativeLayout
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/ab_bg"
+    >
+    
+    
+      
+     <ImageView 
+         android:id="@+id/backbutton"
+              android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+       
+         android:background="@drawable/ic_back"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="10dp"/>
+     
+     
+     
+    <ImageView 
+         android:id="@+id/my_friends"
+              android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/backbutton"
+         android:background="@drawable/ic_my_friends"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="12dp"
+      android:layout_alignBottom="@+id/edit_profile"/>
+     
+     
+     
+     
+       <ImageView 
+         android:id="@+id/edit_profile"
+              android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/txtTitle"
+         android:background="@drawable/ic_edit_profile"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="12dp"
+      />
+     
+     <ImageView 
+         android:id="@+id/addfrds"
+              android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/edit_profile"
+         android:background="@drawable/ic_add_friends"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="12dp"
+      android:layout_alignBottom="@+id/edit_profile"/>
+       <ImageView 
+           android:id="@+id/logout"
+              android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/addfrds"
+         android:background="@drawable/ic_logout"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="12dp"
+      android:layout_alignBottom="@+id/edit_profile"
+    />
+
+       <TextView
+           android:id="@+id/txtTitle"
+           android:layout_width="@dimen/txt_width"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/edit_profile"
+           android:layout_centerHorizontal="true"
+           android:gravity="center"
+           android:textColor="#FFFFFF"
+           android:textSize="18sp"
+           android:textStyle="bold" />
+  
+</RelativeLayout>
+    
+
+</RelativeLayout>

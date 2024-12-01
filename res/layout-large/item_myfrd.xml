@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp" >
+
+    
+    
+      <ImageView
+        android:id="@+id/imageView_mockgalleryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scaleType="fitCenter"
+          android:src="@drawable/default_image" 
+          android:layout_marginLeft="10dp"/>
+      
+    <TextView
+        android:id="@+id/textView_caption"
+        android:layout_width="@dimen/text_del_width"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="30dp"
+       android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Caption"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000" 
+        android:layout_toRightOf="@+id/imageView_mockgalleryItem"
+        android:textSize="25sp"/>
+
+   
+    <ImageView
+        android:id="@+id/delete_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:layout_toRightOf="@+id/textView_caption"
+        android:src="@drawable/del_friend_btn" 
+             android:layout_marginTop="30dp"/>
+        
+  
+
+</RelativeLayout>

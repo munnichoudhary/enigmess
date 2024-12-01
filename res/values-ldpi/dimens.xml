@@ -1,0 +1,22 @@
+<resources>
+        
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="genre">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+    
+  <dimen  name = "popup_height">280dp</dimen>
+ <dimen name ="popup_x_offset">-95.0dp</dimen>
+ <dimen name="popup_y_offset">-2.0dp</dimen>
+
+ <dimen name="txt_width">100dp</dimen>
+   <dimen name="txt_width_large">100dp</dimen>
+       <dimen name="txt_size_large">25dp</dimen>
+           <dimen name="txtview_caption">155dp</dimen>
+            <dimen name="margin_left_decrypte_btn">0dp</dimen> 
+             <dimen name="margin_top_rel">30dp</dimen>
+               <dimen name="add_frd_width">160dp</dimen> 
+                 <dimen name="textuser_width">290dp</dimen> 
+               <dimen name="textmsg_width">290dp</dimen> 
+                  <dimen name="text_del_width">309dp</dimen> 
+</resources>

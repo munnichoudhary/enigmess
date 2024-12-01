@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/reldecrypted_msg"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:layout_below="@+id/edit_text_entercode"
+          android:background="#e2e2e2"
+          android:layout_marginTop="20dp">
+          
+        <ImageView 
+             android:id="@+id/imgmsg"
+              android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginTop="10dp"
+        
+         />
+        
+        <TextView 
+             android:id="@+id/name"
+              android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/imgmsg"
+          android:text=""
+           android:textSize="20sp"
+           android:layout_marginTop="10dp" 
+           android:layout_marginLeft="10dp"/>
+        
+        <TextView 
+             android:id="@+id/notrecieve"
+              android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/name"
+          android:layout_toRightOf="@+id/imgmsg"
+          android:text=""
+           android:textColor="#54ac79"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp" 
+            android:layout_marginLeft="5dp"/>
+        
+        <TextView 
+             android:id="@+id/replysoon"
+              android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:textColor="#54ac79"
+            android:text=""
+              android:layout_toRightOf="@+id/imgmsg"
+                  android:layout_below="@+id/notrecieve"
+                   android:textSize="14sp"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginLeft="5dp" />
+        
+        <TextView 
+             android:id="@+id/time"
+              android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:layout_toRightOf="@+id/replysoon"
+          android:layout_below="@+id/replysoon"
+           android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_marginLeft="20dp"
+       />
+        
+   </RelativeLayout>
+   
+    <ImageButton 
+          android:id="@+id/delete"
+              android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+             android:background="@drawable/del_btn"
+             android:layout_below="@+id/reldecrypted_msg"
+             android:layout_marginTop="30dp"
+             android:layout_marginLeft="30dp"
+             android:layout_centerHorizontal="true"
+       />
+    
+
+</RelativeLayout>

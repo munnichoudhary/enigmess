@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+   <RelativeLayout 
+         android:id="@+id/user_edit_profile_detail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:background="#e2e2e2">
+    
+    <ImageView 
+         android:id="@+id/user_image_edit_profile"
+         android:layout_width="150dp"
+         android:layout_height="150dp"
+         android:background="@drawable/default_image"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"/>
+    
+    <ImageButton
+         android:id="@+id/user_name_edit_profile"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Name"
+           android:textColor="#000000"
+            android:textSize="25sp"
+            android:layout_marginTop="60dp" 
+            android:layout_marginLeft="9dp"
+            android:layout_toRightOf="@+id/user_image_edit_profile"
+            android:background="@drawable/edit_photo_btn"/>
+    
+  
+    
+    
+    </RelativeLayout>
+    
+   <EditText
+       android:id="@+id/name_edit_pro"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/user_edit_profile_detail"
+         android:hint="     Name"
+          android:drawableRight="@drawable/ic_edit"
+          android:layout_centerHorizontal="true"
+             android:drawableLeft="@drawable/dot"
+                android:textColorHint="#007236"
+                android:textSize="@dimen/txt_size_large"
+                    android:layout_marginTop="30dp"
+        />
+   <EditText 
+       android:id="@+id/username_edit_pro"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+            android:layout_below="@+id/name_edit_pro"
+              android:hint="     Username"
+               android:drawableRight="@drawable/ic_edit"
+          android:layout_centerHorizontal="true"
+             android:drawableLeft="@drawable/dot"
+               android:textColorHint="#929292"
+               android:textSize="@dimen/txt_size_large"
+         
+               />
+   
+   <EditText 
+       android:id="@+id/email_edit_pro"
+       android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+            android:layout_below="@+id/username_edit_pro"
+              android:hint="      Email"
+               android:drawableRight="@drawable/ic_edit"
+          android:layout_centerHorizontal="true"
+             android:drawableLeft="@drawable/dot"
+                 android:textColorHint="#929292"
+                 android:inputType="textEmailAddress"
+               android:textSize="@dimen/txt_size_large"
+       />
+   <EditText 
+       android:id="@+id/pin_edit_pro"
+       android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+            android:layout_below="@+id/email_edit_pro"
+              android:hint="      Your Pin"
+               android:drawableRight="@drawable/ic_edit"
+               android:drawableLeft="@drawable/dot"
+          android:layout_centerHorizontal="true"
+            android:textColorHint="#929292"
+           android:textSize="@dimen/txt_size_large"
+            
+            
+       />
+   
+   
+   <ImageButton
+         android:id="@+id/submit_edit_pro"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/submit_btn"
+         android:layout_below="@+id/pin_edit_pro"
+         android:layout_marginTop="30dp"
+          android:layout_centerHorizontal="true"
+        />
+     
+
+</RelativeLayout>

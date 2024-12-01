@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#007236" 
+   >
+
+    <RelativeLayout
+        android:id="@+id/form_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top_rel"
+         android:visibility="visible"
+         >
+
+        <ImageView
+            android:id="@+id/icon_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/logo1" />
+
+        <com.facebook.widget.LoginButton
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/authButton"
+            android:layout_width="249dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/icon_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            fb:login_text=""
+            fb:logout_text="" />
+
+        <EditText
+            android:id="@+id/edit_text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/authButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:hint="Email"
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="17sp"
+            android:inputType="textEmailAddress"
+            android:textCursorDrawable="@drawable/courser_loc" 
+            android:gravity="center" 
+            />
+
+        <EditText
+            android:id="@+id/edit_text_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textfield"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="17sp"
+             android:textCursorDrawable="@drawable/courser_loc" 
+             android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_pass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signin_btn" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="forgot username and password?"
+            android:textColor="#b9d9c6"
+            android:textSize="17sp" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/signup_btn" />
+        
+        
+            
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+     android:id="@+id/relpower"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    >
+<TextView 
+    android:id="@+id/poweredby"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Powered by"
+    android:textColor="#ffffff"
+    android:textSize="15dp"
+   />
+
+
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/powered_by_logo"
+  android:layout_toRightOf="@+id/poweredby"
+   android:layout_marginLeft="10dp"
+ />
+
+</RelativeLayout>
+
+</RelativeLayout>

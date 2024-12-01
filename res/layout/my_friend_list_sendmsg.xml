@@ -1,0 +1,114 @@
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <RelativeLayout 
+        android:id="@+id/user_detail"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        android:background="#e2e2e2">
+    
+    <ImageView 
+         android:id="@+id/user_image"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:background="@drawable/profile_pic_bg"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"/>
+    
+    <TextView 
+         android:id="@+id/user_name"
+         android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+           android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp" 
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/user_image"/>
+    
+    <TextView 
+         android:id="@+id/user_description"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:text=""
+           android:textColor="#929292"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp" 
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/user_name"
+            android:layout_toRightOf="@+id/user_image"/>
+    
+    
+    </RelativeLayout>
+    
+    
+    <TextView 
+         android:id="@+id/recent"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:text="Recent"
+           android:textColor="#929292"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" 
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/user_detail"
+            android:background="#e2e2e2"
+          />
+    <ListView 
+           android:id="@+id/list_view"
+         android:layout_width="wrap_content"
+         android:layout_height="100dp"
+         android:layout_below="@+id/recent"
+        ></ListView>
+    
+    
+     <TextView 
+         android:id="@+id/type_msg"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:text="Type Your Message Here"
+           android:textColor="#929292"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp" 
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/list_view"
+            android:background="#e2e2e2"
+          />
+     
+   <EditText
+            android:id="@+id/edit_text_type_msg"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+        android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+           android:hint=""
+               android:gravity="center" 
+            android:textColor="#518a6c"
+              android:textColorHint="#518a6c"
+            android:textSize="14sp" 
+            android:layout_below="@+id/type_msg"
+            android:background="#e2e2e2"
+            />
+   
+   <ImageButton 
+       android:id="@+id/submit_button_msg"
+         android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/send_btn"
+            android:layout_below="@+id/edit_text_type_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+     
+
+</RelativeLayout>
+</ScrollView>

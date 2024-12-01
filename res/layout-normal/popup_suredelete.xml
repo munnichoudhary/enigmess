@@ -1,0 +1,58 @@
+  
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="100dp"
+    android:background="@drawable/popup_bg1"
+    android:id="@+id/RelativeMain"  
+    xmlns:tools="http://schemas.android.com/tools"
+     tools:context="${relativePackage}.${activityClass}"
+     
+     android:layout_marginTop="20dp">
+    
+    <TextView 
+         android:id="@+id/text_enter_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+           android:text="Are you Sure You want to delete Friend?"
+               android:gravity="center" 
+            android:textColor="#898989"
+              android:textColorHint="#898989"
+            android:textSize="14sp" 
+     
+        />
+    
+    <View
+       android:id="@+id/SplitLine_hor1"
+       android:layout_width="match_parent"
+       android:layout_height= "0.3dp"
+       android:background="#ffffff" 
+       android:layout_below="@+id/text_enter_email"
+
+     />
+    
+  <ImageButton
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/yes_btn"
+        android:layout_marginLeft="10dp" />
+  
+   <ImageButton
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SplitLine_hor1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/no_btn"
+        android:layout_toRightOf="@+id/yes" 
+        android:layout_marginLeft="10dp"/>
+    
+    
+    
+</RelativeLayout>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp" >
+
+    
+    
+      <ImageView
+        android:id="@+id/imageView_mockgalleryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+           android:src="@drawable/default_image"/>
+      
+    <TextView
+        android:id="@+id/textView_caption"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="30dp"
+       android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Caption"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000" 
+        android:layout_toRightOf="@+id/imageView_mockgalleryItem"
+        android:textSize="20sp"/>
+
+    <!--
+         <ImageView
+        android:id="@+id/imageView_mockgalleryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/pro_image1"
+        android:maxLines="5"
+        android:src="@drawable/ic_launcher" />
+    -->
+
+  <Button
+        android:id="@+id/addfrd"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@+id/textView_caption"
+      android:background="@drawable/add_friend_btn"
+      android:layout_marginTop="30dp"
+      />
+  
+
+</RelativeLayout>

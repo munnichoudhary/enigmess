@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#007236" >
+
+    <RelativeLayout
+        android:id="@+id/form_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp" >
+
+        <ImageView
+            android:id="@+id/icon_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/logo1" />
+        
+        
+        <ImageView
+            android:id="@+id/reg_fb_btn"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/reg_fb_btn" 
+               android:layout_below="@+id/icon_login"/>
+
+
+        <EditText
+            android:id="@+id/edit_text_name"
+           android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/reg_fb_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/textfield"
+            android:hint="Name"
+         android:gravity="center" 
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="25sp"
+            android:inputType="text"
+             android:textCursorDrawable="@drawable/courser_loc" />
+        
+         <TextView
+            android:id="@+id/type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_name"
+         
+            android:layout_marginTop="1dp"
+            android:hint="Type your real name here"
+            android:paddingLeft="10dp"
+            android:textColor="#54ac79"
+            android:textColorHint="#54ac79"
+            android:textSize="19sp" />
+        
+
+        <EditText
+            android:id="@+id/edit_text_uname"
+             android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/type_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textfield"
+            android:hint="Username"
+            android:inputType="text"
+           android:gravity="center" 
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="25sp"
+             android:textCursorDrawable="@drawable/courser_loc" />
+        
+        
+        
+        
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_text_uname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/textfield"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="25sp" 
+            android:gravity="center" />
+        
+        
+        
+        
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_text_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textfield"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="25sp" 
+            android:gravity="center" />
+        
+        
+      
+        
+         <TextView
+            android:id="@+id/min_char"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_password"
+            android:layout_marginTop="1dp"
+           
+            android:hint="minimum 6 characters"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#54ac79"
+            android:textColorHint="#54ac79"
+            android:textSize="14sp" />
+         
+           <EditText
+            android:id="@+id/edit_text_enterpin"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/min_char"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/textfield"
+            android:hint="Enter Your Pin"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#007236"
+            android:textSize="25sp"
+            android:gravity="center" 
+        />
+        
+         
+         
+         
+           <ImageButton
+            android:id="@+id/create_ac_btn"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/edit_text_enterpin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/create_ac_btn"   />
+        
+           
+           
+          
+
+      
+    </RelativeLayout>
+    
+     <RelativeLayout 
+     android:id="@+id/relpower"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+    android:layout_centerHorizontal="true"
+   android:layout_alignParentBottom="true"
+    >
+<TextView 
+    android:id="@+id/poweredby"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Powered by"
+    android:textColor="#ffffff"
+
+    android:textSize="20dp"
+   
+    
+    />
+
+
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/powered_by_logo"
+  android:layout_toRightOf="@+id/poweredby"
+ android:layout_marginLeft="14dp"
+  
+     />
+
+</RelativeLayout>
+</RelativeLayout>

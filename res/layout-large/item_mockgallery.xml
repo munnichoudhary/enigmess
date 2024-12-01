@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp" >
+
+    
+    
+      <ImageView
+        android:id="@+id/imageView_mockgalleryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+         android:src="@drawable/default_image"/>
+      
+    <TextView
+        android:id="@+id/textView_caption"
+        android:layout_width="@dimen/textuser_width"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="30dp"
+       android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Caption"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000" 
+        android:layout_toRightOf="@+id/imageView_mockgalleryItem"
+        android:textSize="25dp"/>
+    
+    
+    <TextView
+        android:id="@+id/messages"
+        android:layout_width="@dimen/textmsg_width"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+       android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="messages"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000" 
+        android:layout_toRightOf="@+id/imageView_mockgalleryItem"
+        android:layout_below="@+id/textView_caption"
+           android:textSize="25dp"/>
+
+    <!--
+         <ImageView
+        android:id="@+id/imageView_mockgalleryItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/pro_image1"
+        android:maxLines="5"
+        android:src="@drawable/ic_launcher" />
+    -->
+
+  <Button
+        android:id="@+id/decrypte"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_toRightOf="@+id/textView_caption"
+        android:background="@drawable/decrypt_btn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="0dp"
+        
+         
+      />
+  
+
+</RelativeLayout>

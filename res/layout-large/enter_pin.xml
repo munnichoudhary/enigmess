@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+  <EditText
+            android:id="@+id/edit_text_pin"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+        android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/textfield"
+            android:hint="Enter Pin"
+               android:gravity="center" 
+            android:textColor="#ffffff"
+              android:textColorHint="#007236"
+          android:textSize="@dimen/txt_size_large"
+            />
+   
+   
+        <TextView
+            android:id="@+id/forgot_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_pin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="Forgot Pin?"
+             android:textColor="#aec1cf"
+            android:textColorHint="#54ac79"
+                android:textSize="25sp"
+          
+           />
+  
+    <ImageButton
+        android:id="@+id/imgbtn_submit"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/forgot_pin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/submit_btn_pin" 
+        />
+
+</RelativeLayout>
